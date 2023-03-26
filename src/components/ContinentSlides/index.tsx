@@ -58,8 +58,8 @@ export default function ContinentSlides() {
           height: "100%",
         }}
       >
-        {slides.map((slide) => (
-          <SwiperSlide>
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
             <ContinentSlide {...slide} />
           </SwiperSlide>
         ))}

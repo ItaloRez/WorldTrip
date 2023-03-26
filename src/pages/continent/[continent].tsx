@@ -472,8 +472,8 @@ export default function Europa() {
           mt={["20px", "40px"]}
           mb="35px"
         >
-          {continentData.cities.map((city) => (
-            <CityCard {...city} />
+          {continentData.cities.map((city, index) => (
+            <CityCard key={index} {...city} />
           ))}
         </SimpleGrid>
       </Box>
