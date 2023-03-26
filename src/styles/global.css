@@ -15,3 +15,7 @@
 .swiper-button-next {
   color: #ffba08 !important;
 }
+
+body {
+  overflow-x: hidden;
+}

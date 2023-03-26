@@ -13,13 +13,21 @@ export default function Home() {
 
       <TravelTypes />
 
-      <Box w="90px" h="2px" bg="dark.text" margin="80px auto 52px" />
+      <Box
+        w="90px"
+        h="2px"
+        bg="dark.text"
+        margin={{
+          base: "36px auto 24px",
+          lg: "80px auto 52px",
+        }}
+      />
 
       <Text
         color="dark.text"
         fontWeight={500}
-        fontSize="4xl"
-        lineHeight="54px"
+        fontSize={{ base: "xl", lg: "4xl" }}
+        lineHeight={{ base: "30px", lg: "54px" }}
         textAlign="center"
       >
         Vamos nessa? <br />
